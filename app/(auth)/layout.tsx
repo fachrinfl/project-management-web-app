@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Login | Project Management",
+};
+
+type AuthLayoutProps = {
+  children: React.ReactNode;
+};
+
+export default function AuthLayout({ children }: AuthLayoutProps) {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-background to-muted">
+      {children}
+    </div>
+  );
+}
